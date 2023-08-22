@@ -61,7 +61,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 
 }
@@ -149,9 +150,7 @@ transform: translateY(-8px) scale(1.1);
             margin: 0 auto;
             background-color:#DDD0C8;
     color: #99775C;
-    position: relative;
     text-align: center;
-     /* Adicione esta linha */
 }
 
         #terapeuta {
@@ -159,7 +158,7 @@ transform: translateY(-8px) scale(1.1);
             flex-direction: row;
             height: 800px;
             display: flex;
-            color: #323232;
+            color: #66503e;
             font-size: 22px;
             align-items: center;
             font-family: 'Abhaya Libre', serif;
@@ -193,7 +192,7 @@ transform: translateY(-8px) scale(1.1);
   }
  
         #processo {
-            color: #323232;
+            color: #66503e;
             margin-top: 0px;
     position: relative;
     padding: 30px 0;
@@ -577,6 +576,7 @@ ul.lista-Geani li::before {
     max-width: 120px;
     height: auto;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .intro-section {
@@ -628,8 +628,9 @@ ul.lista-Geani li::before {
     position: relative;
     justify-content: right;
     align-items: right;
+    text-align: center;
     height: 4px;
-    top: -30px;
+    top: -26px;
     right: -560px;
     color: #00b36e;
 }
@@ -643,7 +644,7 @@ ul.lista-Geani li::before {
     color: #6b4521;
     text-transform: uppercase;
     margin-bottom: 0;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 .terapeutico{
     font-weight: 400;
@@ -653,22 +654,29 @@ ul.lista-Geani li::before {
     margin-bottom: 20px;
     margin-left: 40px;
     font-size: 24px;
-    color: #66503e;
+    color: #6b4521;
     font-family: 'Abhaya Libre', serif;
+}
+.linkedingeani a{
+    font-size: 32px;
+    color: #66503e;
 }
 
 
-.contrato-titulo{
-    color: #66503e;
-    text-transform: uppercase;
-    font-family: 'Abhaya Libre', serif;
-    font-size: 34px;
-    margin-top: 100px;
-    font-weight: 500;
-    text-align:left;
-    justify-content: left;
-    margin-bottom: 20px;
-    margin-left: 50px;
+.linkedingeani a:hover{
+    color: #777;
+    animation: translateY 0.5s infinite alternate;
+}
+@keyframes translateY{
+from{
+transform: translateY(0) scale(1);
+}
+to{
+transform: translateY(-2px) scale(1.1);
+}
+}
+.linkedingeani {
+text-align: center;
 }
 
     .contrato{
@@ -677,7 +685,7 @@ ul.lista-Geani li::before {
     font-weight: 400;
     margin-top: 20px;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 40px;
     justify-content: left;
     color: #6b4521;
     font-family: 'Abhaya Libre', serif;
@@ -714,7 +722,7 @@ ul.lista-Geani li::before {
     width: auto;
     height: auto;
     gap: 40px;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -772,6 +780,7 @@ ul.lista-Geani li::before {
 
 .descrição-blog {
     text-align: center;
+    margin-top: 30px;
     justify-content: right;
     align-items: center;
     font-size: 25px;
@@ -792,6 +801,7 @@ ul.lista-Geani li::before {
         .footer-icons a {
             color: #66503e;
             font-size: 32px;
+            margin-top: 15px;
         }
 
         .footer-icons a:hover{
