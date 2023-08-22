@@ -1,0 +1,909 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+        
+html {
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+       scroll-behavior: smooth;
+   }
+
+   * { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+            margin: 0px 0px 0px 0px;
+            padding: 0;
+            overflow-x: hidden; 
+            background-color: white; /* Bege claro */
+            color: #362f29; /* Marrom escuro */
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li::before {
+            content: "-";
+            color: #362f29;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .header {
+    background-color: #DDD0C8;
+    padding: 10px 1-0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #66503e;
+    cursor: default;
+        }
+  
+        .logo img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 200px;
+            cursor: default;
+        }
+        .social-icon {
+            display: flex;
+            text-align: right;
+            align-items: center;
+            justify-content: right;
+            gap: 12px;
+
+    }
+.logo {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    
+
+}
+
+        .social-icon a {
+            color: #66503e;
+            font-size: 33px;
+            gap: 14px;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .social-icon a:hover{
+                color: white;
+                animation: translateY 0.5s infinite alternate;
+        }
+        @keyframes translateY{
+            from{
+transform: translateY(0) scale(1);
+            }
+            to{
+transform: translateY(-8px) scale(1.1);
+            }
+        }
+
+        .nav-item {
+            margin-right: 100px;
+            font-weight: 550;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 19px;
+            color: #66503e;
+            font-family: 'Abhaya Libre', serif;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+
+.menunav{
+    display: flex;
+    cursor: default;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item:hover {
+    color: white;
+    animation: translateY 0.5s infinite alternate;
+}
+
+
+        section {
+            padding: 100px;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 20px;
+        }
+        footer {
+    background-color: #DDD0C8; /* Cor de fundo do footer */
+    color: #66503e;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+    height: auto; /* Remova a altura fixa para se ajustar ao conteúdo */
+}
+        .blog-section {
+            background-color: #A7BEAE;
+        }
+        .blog-content {
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .blog-post {
+            padding: 0px;
+            background-color: #dbdcdc;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #como-funciona {
+            margin: 0 auto;
+            background-color:#DDD0C8;
+    color: #99775C;
+    position: relative;
+    text-align: center;
+     /* Adicione esta linha */
+}
+
+        #terapeuta {
+            background-color: white;
+            flex-direction: row;
+            height: 800px;
+            display: flex;
+            color: #323232;
+            font-size: 22px;
+            align-items: center;
+            font-family: 'Abhaya Libre', serif;
+            justify-content: center;
+
+        }
+        @media (max-width: 768px) {
+            .cursos{
+            min-height: 60vh;
+
+            h2{
+                font-size: 34px;
+                padding: 0 14px;
+                width: 100%;
+            }
+
+            ul{
+                font-size: 14px;
+            }
+        }
+    }
+
+
+
+.aterapeuta {
+    margin: 20px 0;
+}
+.img-container {
+    flex: 1;
+    text-align: center;
+  }
+ 
+        #processo {
+            color: #323232;
+            margin-top: 0px;
+    position: relative;
+    padding: 30px 0;
+    overflow: hidden;
+    background-color: white;
+}
+  
+        #doencas {
+    position: relative;
+    text-align: left; /* Alinhe à esquerda */
+    font-family: 'Abhaya Libre', serif;
+    font-size: 38px;
+    color: #6b4521;
+}
+#blog {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+
+}
+.post-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+#doencas h2 {
+    margin-bottom: 10px;
+}
+
+.image-section {
+    position: relative;
+    background-image: linear-gradient(to bottom, transparent 0%, #DDD0C8 90%);
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+}
+@media (max-width: 768px) {
+    /* Apply these styles when the screen width is 768px or smaller */
+    .image-section {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+
+        text-align: center;
+        height: auto; /* Allow the content to determine the height */
+        padding: 20px; /* Add some spacing around the content */
+    }
+}
+.overlay {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+.img-fundo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.texto-img {
+    font-size: 48px;
+    color: white;
+    font-family: 'Abhaya Libre', serif;
+    text-align: left;
+    display: flex;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.horizontal-line2 {
+    display: inline-block;
+    width: 100%; /* Altere a largura para ocupar a largura completa */
+    height: 1px;
+    background-color: #6b4521;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0; /* Posicione à esquerda da seção */
+    z-index: -1; /* Coloque atrás do conteúdo */
+}
+.image-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 100%;
+    z-index: -1;
+}
+#psicoterapia {
+        background-color: #f5f5f5; /* Cor de fundo desejada */
+        text-align: center;
+        padding: 100px 0;
+        font-family: 'Abhaya Libre', serif;
+        }
+
+
+    .services{
+        display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    background-color: #DDD0C8;
+    min-height: 500px;
+    margin-bottom: 0; /* Reduce the bottom margin between sections */
+    padding-bottom: 0;
+    margin-top: 0; /
+}
+
+.services-content h2{
+    text-align: center;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 38px;
+    margin-bottom: 14px;
+    margin-top: 32px;
+    padding-right: 50px;
+    justify-content: center;
+}
+.itens{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 48px;
+    margin-bottom: 0;
+}
+
+.ositens{
+    background-color: #c0a899;
+    color: #323232;
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    width: 380px;
+    border-radius: 8%;
+    box-shadow: 0px -1px 18px -8px rgba(0,0,0, 0.5);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+
+    
+
+}
+.ositens img {
+    transition: transform 0.25s, box-shadow 0.25s;
+    border: 3px solid white;
+    border-radius: 8px;
+    margin: 10px 0; /* Adicione margens verticais para separar das bordas superiores e inferiores */
+}
+
+.ositens img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.post img {
+    max-width: 20%;
+    height: 50%;
+    transition: transform 0.25s, box-shadow 0.25s;
+    border-radius: 8px;
+    margin: 10px 0; /* Adicione margens verticais para separar das bordas superiores e inferiores */
+}
+
+.post img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.mine-services-info{
+    width: 100%;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 99;
+    max-width: 354px;
+    max-height: 800px;
+    transition: transform 0.25s;
+}
+
+
+.icone img,
+.icone2 img,
+.icone3 img,
+.icone4 img {
+    width: 100%; /* Ajuste a largura da imagem */
+    height: auto; /* Manter a proporção original da imagem */
+    max-width: 380px; /* Largura máxima da imagem */
+    max-height: 290px; /* Altura máxima da imagem */
+    transition: transform 0.25s;
+    object-fit: cover;
+}
+
+.título-serviços{
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    color:#66503e;
+    font-family: 'Abhaya Libre', serif;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.img-geani{
+    width: 490px;
+    max-width: 100%;
+    margin-top: 70px;
+    margin-bottom: 0 auto;
+    border-radius: 30px;
+    border: 4px solid #99775C;
+}
+@media (max-width: 768px) {
+  .cursos {
+    font-size: 16px;
+    .frasegeani {
+    font-size: 16px; /* Reduzindo o tamanho da fonte do parágrafo em telas menores */
+  }
+  }
+}
+
+ul.lista-Geani li::before {
+        content: "-";
+        color: black; /* Cor desejada para os pontos */
+        display: inline-block;
+        text-align: left;
+        align-items: left;
+        
+
+    }
+    .lista-Geani{
+        font-size: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+    .lista-Geani li{
+        flex-basis: calc(50% - 10px);
+        margin: 0;
+    }
+
+    ul.lista-final li::before {
+        content: "-";
+        color: #66503e; /* Cor desejada para os pontos */
+        display: inline-block;
+        text-align: left;
+        align-items: left;
+        
+
+    }
+    .image-section h2 {
+    color: white; /* Altere para a cor desejada */
+    font-size: 58px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 200px;
+    font-family: 'Libre Baskerville', serif; /* Ajuste o espaçamento superior conforme necessário */
+}
+
+.como-funciona{
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 38px;
+    color: #66503e;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    }
+
+.titulo-doenças{
+        position: relative;
+        font-family: 'Abhaya Libre', serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #66503e;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    margin-bottom: 0;
+    }
+
+    .horizontal-line {
+    display: inline-block;
+    width: 100%; /* Altere a largura para ocupar a largura completa */
+    height: 1px;
+    background-color: #6b4521;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0; /* Posicione à direita da seção */
+    z-index: -1; /* Coloque atrás do conteúdo */
+}
+#doencas h2 {
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    text-align: right; /* Necessário para posicionar a linha */
+}
+.doenças h2 {
+    position: relative;
+    display: inline-block;
+    align-items: right;
+    text-align: right; /* Alinhe à esquerda */
+}
+
+.como{
+    text-align: left;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 38px;
+    justify-content: left;
+    margin-bottom: 0;
+
+}
+
+.desc-funciona .horizontal-line2 {
+    right: 0; /* Posicione à direita da seção */
+    left: auto; /* Remova o posicionamento à esquerda */
+}
+.desc-funciona{
+    font-size: 25px;
+    font-weight: 400;
+    width: 1200px;
+    text-align: left;
+    margin-top: 20px;
+    justify-content: center;
+    color: #323232;
+    font-family: 'Abhaya Libre', serif;
+
+}
+
+.serviços-descrição {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+
+
+.logo-footer img {
+    max-width: 120px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.intro-section {
+    background-color: white;
+    background-size: auto;
+    height: 300px;
+    background-repeat: no-repeat;
+    display: flex;
+    font-size: 29px;
+    text-align: center;
+    justify-content: center;
+
+
+}
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+.intro-content h2 {
+    font-size: 46px;
+    color: #66503e;
+    font-family: 'Abhaya Libre', serif;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+.different-font {
+    font-family: 'Great Vibes', cursive;
+    font-size: 58px;
+    color: #c0a899;
+
+    /* Outros estilos específicos para a palavra "prosperando" */
+}
+
+
+.left-line{
+    position: relative;
+    justify-content: left;
+    align-items: left;
+    height: 4px;
+    top: -30px;
+    left: -450px;
+}
+.left-line2{
+    position: relative;
+    justify-content: right;
+    align-items: right;
+    height: 4px;
+    top: -30px;
+    right: -560px;
+    color: #00b36e;
+}
+
+
+
+.processo-h2{
+    text-align: left;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 38px;
+    color: #6b4521;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-left: 50px;
+}
+.terapeutico{
+    font-weight: 400;
+    text-align: left;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-size: 24px;
+    color: #66503e;
+    font-family: 'Abhaya Libre', serif;
+}
+
+
+.contrato-titulo{
+    color: #66503e;
+    text-transform: uppercase;
+    font-family: 'Abhaya Libre', serif;
+    font-size: 34px;
+    margin-top: 100px;
+    font-weight: 500;
+    text-align:left;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+    .contrato{
+        font-size: 25px;
+        align-items: right;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 50px;
+    justify-content: left;
+    color: #6b4521;
+    font-family: 'Abhaya Libre', serif;
+    }
+    .obsfinal{
+        font-size: 25px;
+        align-items: left;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 0px;
+    justify-content: left;
+    color: #6b4521;
+    font-family: 'Abhaya Libre', serif;
+    }
+
+    .lista-final{
+        font-size: 25px;
+        align-items: left;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 10px;
+    justify-content: left;
+    color: #6b4521;
+    font-family: 'Abhaya Libre', serif;
+    }
+
+    .post {
+        background-color: #ddcdc2;
+    border-radius: 2%;
+    border: 1px solid #ccc; /* Adicione esta linha para a borda */
+    padding: 0px; 
+    width: auto;
+    height: auto;
+    gap: 40px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post img {
+    max-width: 600px;
+    max-height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px; /* Adicione um espaçamento entre o texto e a imagem */
+}
+.post h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #6b4521;
+    margin-top: 20px;
+}
+
+.post h3 {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #777;
+}
+
+.post p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    background-color: #00b36e;
+    color: #fff;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #017448;
+}
+.blog-title {
+    font-size: 38px;
+    color: #774d27;
+    font-family: 'Abhaya Libre', serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.descrição-blog {
+    text-align: center;
+    justify-content: right;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: #774d27;
+    font-family: 'Abhaya Libre', serif;
+}
+
+    
+
+.footer-icons {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+
+        }
+
+        .footer-icons a {
+            color: #66503e;
+            font-size: 32px;
+        }
+
+        .footer-icons a:hover{
+                color: white;
+                animation: translateY 0.5s infinite alternate;
+        }
+
+        @keyframes translateY{
+            from{
+transform: translateY(0) scale(1);
+            }
+            to{
+transform: translateY(-8px) scale(1.1);
+            }
+        }
+
+
+.geanihostins {
+    flex: 1;
+    text-align: center;
+  }
+
+  .cursos {
+    flex: 1;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 260px;
+    margin-left: 50px;
+    color: #66503e;
+  }
+.titulogeani{
+    color: white;
+    font-size: 38px;
+}
+.different-font2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    color: white;
+}
+
+.frasegeani{
+    color: #6b4521;
+    font-size: 25px;
+    border: 3px solid #99775C;
+    padding: 30px;
+    border-radius: 30px;
+}
+.btn2 {
+    display: inline-block;
+    align-items: end;
+    font-size: 20px;
+    background-color: #00b36e;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn2:hover {
+    background-color: #017448;
+}
+.tituloemail{
+    color: red;
+}
+
+.formaçõesecursos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-top: 40px;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    border: 3px solid #6b4521;
+    padding: 0px 40px 50px 40px;
+    border-radius: 30px;
+    color:#6b4521 ;
+
+}
+.formações{
+    color: #6b4521;
+    margin-top: 20px;
+    text-align: center;
+}
+.img-perfil img {
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+    img{
+    max-width: 24px;
+    transition: transform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+}
+@media screen and (max-width: 768px){
+    .btn-whatsapp{
+        img{
+            max-width: 54px;
+        }
+    }
+}
